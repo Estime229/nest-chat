@@ -6,6 +6,7 @@ import { JwtModule } from '@nestjs/jwt';
 import { JwtStrategy } from './jwt.strategy';
 import { UserService } from 'src/user/user.service';
 import { MailerService } from 'src/mailer.service';
+import { AwsS3Service } from 'src/aws/aws-s3.service';
 // import { JwtStrategy } from './jwtStrategy';
 
 @Module({
@@ -24,6 +25,7 @@ import { MailerService } from 'src/mailer.service';
     JwtStrategy,
     UserService,
     MailerService,
+    AwsS3Service,
   ],
 })
 export class AuthModule {}

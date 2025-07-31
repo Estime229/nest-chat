@@ -20,6 +20,8 @@ model User {
   password     String
   isResettingPassword Boolean @default(false)
   resetPasswordToken  String?  @unique
+  avatarFilekey  String?  @unique
+
 }
 
 

@@ -108,7 +108,6 @@ export class AuthService {
   }
 
   //resetUserPasswordequest
-
   async resetUserPasswordRequest({ email }: { email: string }) {
     try {
       const existingUser = await this.prisma.user.findUnique({
